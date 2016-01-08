@@ -1,26 +1,79 @@
-@import "bourbon";
+// @import "bourbon";
 
-// Dependencies
-@import "utilities/variables";
-@import "utilities/mixins";
-@import "utilities/base";
-@import "utilities/typography";
-@import "utilities/layout";
-@import "utilities/icons";
+// // Dependencies
+// @import "utilities/variables";
+// @import "utilities/mixins";
+// @import "utilities/base";
+// @import "utilities/typography";
+// @import "utilities/layout";
+// @import "utilities/icons";
 
-// Objects
-@import "objects/header";
-@import "objects/footer";
-@import "objects/buttons";
-@import "objects/react-autosuggest";
-@import "objects/videojs";
-@import "objects/cast-question";
-@import "objects/modal";
-@import "objects/cards";
+// // Objects
+// @import "objects/header";
+// @import "objects/footer";
+// @import "objects/buttons";
+// @import "objects/react-autosuggest";
+// @import "objects/videojs";
+// @import "objects/cast-question";
+// @import "objects/modal";
+// @import "objects/cards";
 
-//Pages
-@import "pages/splash";
-@import "pages/questionnaire";
-@import "pages/results";
-@import "pages/checkpoint";
-@import "pages/sourcelist";
+// //Pages
+// @import "pages/splash";
+// @import "pages/questionnaire";
+// @import "pages/results";
+// @import "pages/checkpoint";
+// @import "pages/sourcelist";
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+
+.sidebar {
+  background: #7F524B;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  width: 280px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.sidebar li {
+  margin-bottom: 6px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+
+  &.selected {
+    background-color: #90615A;
+    border-left: 6px solid #BE8C84;
+  }
+}
+
+.sidebar h2 {
+  color: rgba(255, 255, 255, .33);
+  font-family: 'Patua One', cursive;
+  font-size: 24px;
+  padding-left: 20px;
+  background-color: #A43928;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 0px;
+}
+
+.sidebar h3 {
+  color: #FFA596;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 20px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+}
+
+.sidebar .fa {
+  margin-right: 12px;
+}

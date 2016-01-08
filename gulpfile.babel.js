@@ -15,7 +15,7 @@ process.env.NODE_ENV = (config.production) ? 'production' : 'development';
 gulp.task('build', done => {
   runSequence(
     'clean',
-    ['sass', 'src:nowatch', 'assets', 'statics', 'html', 'prerender'],
+    ['sass', 'src:nowatch', 'assets', 'statics', 'html'/*, 'prerender'*/],
     'test',
     done
   );
@@ -28,7 +28,7 @@ gulp.task('build', done => {
 gulp.task('buildwatch', done => {
   runSequence(
     'clean',
-    ['sass', 'src:watch', 'assets', 'statics', 'html', 'prerender'],
+    ['sass', 'src:watch', 'assets', 'statics', 'html'/*, 'prerender'*/],
     'test',
     'watch',
     'serve',
